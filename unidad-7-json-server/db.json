@@ -1,0 +1,39 @@
+{
+  "respuestas": [
+    {
+      "adicional": "Lorem ipsum",
+      "ingresosMensuales": "100000",
+      "sisben": "Categoria 2",
+      "puntajeSisben": "2",
+      "estrato": "2",
+      "tipoCasa": "Propia",
+      "nivelEducativoPa": "Basica Primaria",
+      "nivelEducativoMa": "Secundaria",
+      "ocupacionPa": "Comerciante",
+      "ocupacionMa": "ama de casa",
+      "numeroHermanos": "2",
+      "posicionEntre": "2",
+      "hermanosEducacion": "2",
+      "colegio": "San MartinIED",
+      "jornada": "mañana",
+      "calendario": "A",
+      "metodologia": "Educacion Tradicional",
+      "fechaGrado": "2023-07-14",
+      "carreaDeseada": "Ingenieria",
+      "razonDeseada": "Me gustan los numeros",
+      "nombreCompleto": "Julian Perez",
+      "correo": "correo@correo.com",
+      "documentoTipo": "TI",
+      "documentoNumero": "1234134",
+      "direccion": "Calle 12 234",
+      "telefono": "3241256",
+      "sexoBiologico": "Mujer",
+      "tipoSangre": "A",
+      "rh": "+",
+      "nacionalidad": "Colombiana",
+      "barrio": "Patio bonito",
+      "localidad": "Kennedy",
+      "id": 2
+    }
+  ]
+}

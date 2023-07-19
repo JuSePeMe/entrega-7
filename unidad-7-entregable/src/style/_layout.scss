@@ -1,0 +1,106 @@
+@use "./variables.scss" as v;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 40px;
+    width: 100vw;
+    height: 120vh;
+    padding: 20px;
+    font-family: v.$font-family;
+    background-image: v.$container-bg;
+    main{
+
+        background: v.$main-bg;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0 7px 0 rgba(0,0,0,0.13), 0 1px 4px 0 rgba(0,0,0,0.11);
+        h3{
+            font-weight: 800;
+            font-size: 1.4rem;
+            color:v.$green;
+            text-align: center;
+            padding: 1.4rem;
+        }
+        >p{
+            text-align: center;
+            font-size: 1.5rem;
+            color: v.$green;
+            text-align: center;
+            padding: 1rem;
+            span{
+                font-weight: 700;
+                cursor: pointer;
+                padding-left: 5% ;
+                padding-right: 5%;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+        textarea{
+            height: 400px;
+            font-family: v.$font-family;
+            padding: 10px 10px;
+            font-size: 1.1rem;
+
+        }
+        button{
+            background: v.$green;
+            color: v.$main-bg;
+            background-image: v.$main-bg;
+            font-family: v.$font-family;
+            font-size: 1.4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            padding: 1.2rem 1rem ;
+            border: 3px v.$green solid;
+            border-radius: 100px;
+            width: 100%;
+            margin-top: 1rem;
+            cursor: pointer;
+            &:disabled{
+                opacity: 0.35;
+                cursor: no-drop;
+            }
+        }
+        li{
+            font-size: 1rem;
+            display: flex;
+            font-family: v.$font-family;
+            input {
+                margin-left: 10px;
+                flex: 1;
+                height: 22px;
+                padding: 10px;
+                font-size: 16px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                font-family: v.$font-family;
+              }
+
+            select{
+                margin-left: 10px;
+                flex: 1;
+                height: 22px;
+                // padding: 10px;
+                font-size: 16px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                font-family: v.$font-family;
+              }
+              input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+        }
+    }
+
+}

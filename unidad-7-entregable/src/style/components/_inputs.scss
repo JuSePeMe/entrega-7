@@ -1,0 +1,31 @@
+@use "../variables.scss" as v;
+@mixin inputs(){
+    input[type="text"], 
+    input[type="email"], 
+    input[type="password"], 
+    input[type="date"],
+    select{
+        font-family: v.$font-family;
+        font-size: 1.2rem;
+        border: 0;
+        border-bottom: 1px solid v.$grey;
+        outline:none;
+        padding: 0.4rem;
+        color: v.$black;
+        //marca el elemento con errror
+        &:invalid[data-focused="true"] {
+            border-bottom: 1px solid v.$error;
+            color: v.$error
+        }
+        //muestra el mensaje del error
+        &:invalid[data-focused="true"] ~ p {
+            display: block;
+        }
+        //muestra el mensaje del error con formik
+        &.error-forgot-input{
+            border-bottom: 3px solid v.$error;
+            color:v.$error;
+        }
+
+    };
+}   

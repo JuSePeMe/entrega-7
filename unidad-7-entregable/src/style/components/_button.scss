@@ -1,0 +1,24 @@
+@use "../variables.scss" as v;
+@mixin button(){
+
+    button{
+        background: v.$green;
+        color: v.$main-bg;
+        background-image: v.$main-bg;
+        font-family: v.$font-family;
+        font-size: 1.4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding: 1.2rem 1rem ;
+        border: 3px v.$green solid;
+        border-radius: 100px;
+        width: 100%;
+        margin-top: 1rem;
+        cursor: pointer;
+        &:disabled{
+            opacity: 0.35;
+            cursor: no-drop;
+        }
+    }
+}
